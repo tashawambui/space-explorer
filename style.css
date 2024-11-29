@@ -1,5 +1,52 @@
 body{
-   font-family:Arial, Helvetica, sans-serif ; 
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
    background: color black; 
    color:black;
+}
+h2{
+    color: blueviolet ;
+}
+/*attribute selector*/
+a{
+    color: purple;
+    text-decoration: none;
+}
+a:hover{
+color:blue; ; 
+}
+/*child selector*/
+ul>li{
+    font-weight: bold;
+}
+/*sibling selector*/
+h2+p{
+background-color: black;
+padding:10px ;
+border: radius 5px; ;
+}
+/* :hover pseudo- class*/
+ul li:hover{
+    color: brown;
+}
+/*:nth-child(n)pseudo- class*/
+ul li:nth-child(3){
+background-color:cyan;
+}
+
+/*:not(selector)pseudo -class*/
+p:not(:first-of-type){
+    text-decoration: underline;
+}
+/*::before pseudo-element*/
+ul li::before{
+   content: "🚀";
+}
+/*::after pseudo-element*/
+::after{
+    content:"🌌" ;
+}
+/*::first-letter*/
+p::first-letter{
+    font-size: 200%;
+    color: rgb(181, 57, 3);
 }
